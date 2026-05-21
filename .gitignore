@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+.venv/
+
+# Environment variables
+.env
+
+# Vector DB / indexes
+*.index
+*.pkl
+
+# OS files
+.DS_Store

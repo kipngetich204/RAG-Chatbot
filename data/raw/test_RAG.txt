@@ -1,0 +1,37 @@
+Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think, reason, learn, and solve problems.
+
+Machine Learning (ML) is a subset of AI that allows systems to learn patterns from data without being explicitly programmed.
+
+Retrieval-Augmented Generation (RAG) is an AI architecture that combines information retrieval with text generation. Instead of relying only on the model's internal knowledge, RAG systems retrieve relevant external documents and use them as context before generating answers.
+
+A typical RAG pipeline has three stages:
+
+1. Ingestion Pipeline
+Documents are loaded, split into chunks, embedded into vectors, and stored in a vector database such as FAISS or ChromaDB.
+
+2. Retrieval Pipeline
+When a user asks a question, the query is converted into an embedding and compared against stored embeddings using similarity search.
+
+3. Generation Pipeline
+The retrieved chunks are inserted into a prompt template and sent to a language model such as Qwen, Llama, or Mistral to generate the final answer.
+
+Chunk overlap is important in RAG systems because it preserves context between adjacent chunks. Without overlap, important information may be split across chunk boundaries.
+
+FAISS is a vector similarity search library developed by Meta. It enables efficient nearest-neighbor search across high-dimensional embeddings.
+
+Ollama is a local model runner that allows developers to run open-source language models on their own machines without relying on cloud APIs.
+
+LangChain is a framework for building applications powered by language models. It provides abstractions for prompts, chains, memory, retrieval, and agents.
+
+Embedding models convert text into numerical vectors that capture semantic meaning. Similar texts produce embeddings that are close together in vector space.
+
+The context window of a language model acts like temporary memory. Everything the model can use during a conversation must fit inside this context window.
+
+Good prompt engineering practices include:
+- Defining a clear role
+- Providing relevant context
+- Specifying constraints
+- Requesting structured outputs
+- Using step-by-step reasoning for complex tasks
+
+RAG systems reduce hallucinations by grounding model responses in retrieved documents rather than relying solely on parametric memory.
