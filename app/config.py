@@ -22,6 +22,8 @@ class Settings:
         "all-MiniLM-L6-v2"
     )
 
+  
+
     CHUNK_SIZE: int = 512
     CHUNK_OVERLAP: int = 64
     TOP_K: int = 4
@@ -32,4 +34,4 @@ class Settings:
 
 settings = Settings()
 
-print(settings)
+#print(settings)
